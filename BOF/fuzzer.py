@@ -2,21 +2,11 @@
 import time, struct, sys
 import socket as so
 
-# Buff represents an array of buffers. This will be started at 100 and increment by 100 until it reaches 4000, or until the executable crashes.
 
-buff=["A"]
-
-# Maximum size of buffer.
-
-max_buffer = 4000
-
-# Initial counter value.
-
-counter = 100
-
-# Value to increment per attempt.
-
-increment = 100
+buff=["A"]              # Buff represents an array of buffers. This will be started at 100 and increment by 100 until it reaches 4000, or until the executable crashes.
+max_buffer = 4000       # Maximum size of buffer.
+counter = 100           # Initial counter value.
+increment = 100         # Value to increment per attempt.
 
 
 while len(buff) <= max_buffer:
